@@ -1,0 +1,32 @@
+﻿<Window x:Class="SwiftChat.ChatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SwiftChat"
+        mc:Ignorable="d"
+        Title="Chats" Height="450" Width="800">
+    <Grid Background="#FF73047D">
+        <Grid HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="223">
+            <ListView x:Name="lstPeople" HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="227" Margin="0,0,-4,0">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="566" Margin="228,0,-0.4,0">
+            <ListView x:Name="lstChat" HorizontalAlignment="Left" Height="363" Margin="10,0,0,0" VerticalAlignment="Top" Width="546">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <TextBox x:Name="tbType" HorizontalAlignment="Left" Height="42" Margin="10,368,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="420"/>
+            <Button Content="Send" Margin="435,368,82,10"/>
+            <Button Content="Log Out" Margin="489,368,10,10" Click="Button_Click"/>
+        </Grid>
+    </Grid>
+</Window>
