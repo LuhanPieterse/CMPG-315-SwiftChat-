@@ -19,5 +19,17 @@
         <Button x:Name="btConfirm" Content="Confirm" HorizontalAlignment="Left" Margin="29,251,0,0" VerticalAlignment="Top" Width="120" Height="27" Click="btConfirm_Click"/>
         <Button x:Name="btGoBack" Content="Go Back" HorizontalAlignment="Left" Margin="29,283,0,0" VerticalAlignment="Top" Width="120" Height="27" Click="btGoBack_Click"/>
         <Label x:Name="lbError" Content="Error: Invalid email address" HorizontalAlignment="Left" Margin="154,103,0,0" VerticalAlignment="Top" Foreground="Red" Visibility="Collapsed" />
+        <Border BorderBrush="Turquoise" BorderThickness="1" HorizontalAlignment="Left" Height="357" Margin="206,35,0,0" VerticalAlignment="Top" Width="554" Background="White" RenderTransformOrigin="1.775,0.461" CornerRadius="25">
+            <Label Content="SwiftChat" Margin="36,113,71,75" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="-0.162,-0.358" Height="167" Width="445" FontFamily="Segoe Script" FontSize="78" FontWeight="Bold" Foreground="#008080">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="360"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+        </Border>
     </Grid>
 </Window>
